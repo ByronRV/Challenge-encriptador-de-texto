@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="imagen" src="./assets/Ghost-Recon.png" alt="logo">
+    </header>
+
+    <main class="presentacion">
+        <section class="presentacon__contenido">
+            <textarea id="entradaTexto" class="presentacion__contenido__texto" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="presentacion__botones__subtitulo"><img src="./assets/bi_exclamation-circle-fill.png" alt="muñecoBuscando"> Solo letras minúsculas y sin acento</p>
+            <div class="presentacion__botones">
+                <button onclick="encriptar();" class="boton__1">Encriptar</button>
+                <button onclick="desencriptar();" class="boton__2">Desencriptar</button>
+            </div>
+        </section>
+        <section id="seccion__encriptado" class="encriptado">
+            <textarea id="salidaTexto" class="encriptado__texto" readonly></textarea>
+            <img id="imagen2" class="endriptado__imagen" src="./assets/Muñeco.png" alt="">
+            <label id="label1" class="encriptado__label"><strong>Ningún mensaje fue encontrado</strong><br><br>Ingresa el texto que deseas encriptar o desencriptar</label>
+            <button onclick="copiar();" id="botonCopiar" class="encriptado__boton__3">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Bayron Ramirez</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

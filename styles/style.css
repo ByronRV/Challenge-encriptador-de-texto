@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{      /*Variables*/
+    --color-primario: #254336;
+    --color-secundario: #6B8A7A;
+    --color-terceario: #B7B597;
+    --color-hover: #DAD3BE;
+    --color-blanco: #FFFFFF;
+
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-terceario);
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.imagen{
+    width: 8%;
+    padding: 0.3rem;;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 3% 10%;
+}
+
+.presentacion__contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.presentacion__contenido__texto{
+    font-family: var(--fuente-inter);
+    color: var(--color-primario);
+    background-color: var(--color-terceario);
+    width: 30rem; /* Ancho del textarea */
+    height: 19rem; /* Altura del textarea */
+    padding: 0.62rem; /* Espaciado interno del textarea */
+    font-size: 2rem; /* Tamaño de la fuente del texto */
+    border: none; /* Borde del textarea */
+    outline: none;  /*No muestra el borde del TextArea*/
+    resize: none; /* Permite redimensionar tanto en ancho como en alto */
+    overflow: auto;
+}
+
+.presentacion__botones__subtitulo{
+    font-family: var(--fuente-inter);
+    font-size: 0.8rem;
+    padding: 2rem;
+    gap: 8px;
+}
+
+.presentacion__botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    font-family: var(--fuente-inter);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 1.2rem;
+    width: 15.6rem;
+    height: 3.1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+}
+
+button:hover{     /*Cambia de color al pasar el mouse*/
+    background-color: var(--color-hover);
+    color: var(--color-primario);
+}
+
+.boton__1{
+    background-color: var(--color-primario);
+    color: var(--color-terceario);
+}
+
+.boton__2{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+.encriptado{
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+    border-radius: 2rem;
+    background-color: var(--color-blanco);
+    padding: 0.62rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.encriptado__resultado{
+    color: var(--color-primario);
+}
+
+.encriptado__texto{
+    width: 80%;
+    height: 150rem;
+    font-family: var(--fuente-inter);
+    color: var(--color-primario);
+    padding: 0.62rem; /* Espaciado interno del textarea */
+    font-size: 2rem; /* Tamaño de la fuente del texto */
+    resize: none;
+    overflow: none;
+    border:none; /* Borde del textarea */
+    outline:none;
+}
+
+.endriptado__imagen{
+    width: 50%;
+}
+
+.encriptado__label{
+    width: 20rem;
+    height: 10rem;
+    font-family: var(--fuente-inter);
+    text-align: center;
+}
+
+.encriptado__boton__3{
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+    visibility:hidden;
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 0.9rem;
+}
