@@ -1,19 +1,23 @@
+const entrada = document.querySelector(".presentacion__contenido__texto");
+const salida = document.querySelector(".encriptado__texto");
+
 function encriptar() {
-    confuguracionSeccionEncriptado()
-    let textoEntrante = document.getElementById('entradaTexto').value;
+    confuguracionSeccionEncriptado();
+    const textoEntrante = entrada.value;
     let remplazarVocales = {
         'a': 'ai', 'e': 'enter', 'i': 'imes', 'o': 'ober', 'u': 'ufat'
     };    
     let textoSalida = '';
     for (let letra of textoEntrante){
         textoSalida += remplazarVocales[letra] || letra;
+        console.log(textoSalida);
     }
-    document.getElementById('salidaTexto').value = textoSalida;
+    salida.value = textoSalida;
 }
 
 function desencriptar() {
-    confuguracionSeccionEncriptado()
-    let textoEntrante = document.getElementById('entradaTexto').value;
+    confuguracionSeccionEncriptado();
+    const textoEntrante = entrada.value;
     let remplazarPorVocales = {
         'ai': 'a', 'enter': 'e', 'imes': 'i', 'ober': 'o', 'ufat': 'u'
     };
@@ -21,12 +25,12 @@ function desencriptar() {
     for (let encriptado in remplazarPorVocales){
         textoSalida = textoSalida.split(encriptado).join(remplazarPorVocales[encriptado]);
     }
-    document.getElementById('salidaTexto').value = textoSalida;
+    salida.value = textoSalida;
 }
 
-function copiar(){
-    let textoSalida = document.getElementById('salidaTexto');
-    textoSalida.select();
+function copiar(){    
+    const copiarSalida = salida;
+    copiarSalida.select();
     document.execCommand('copy');
 }
 
