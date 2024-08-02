@@ -1,5 +1,5 @@
-const entrada = document.querySelector(".presentacion__contenido__texto");
-const salida = document.querySelector(".encriptado__texto");
+const entrada = document.querySelector(".textarea_entrada");
+const salida = document.querySelector(".textarea_salida");
 
 function encriptar() {
     confuguracionSeccionEncriptado();
@@ -13,6 +13,7 @@ function encriptar() {
         console.log(textoSalida);
     }
     salida.value = textoSalida;
+    entrada.value = "";
 }
 
 function desencriptar() {
@@ -26,22 +27,22 @@ function desencriptar() {
         textoSalida = textoSalida.split(encriptado).join(remplazarPorVocales[encriptado]);
     }
     salida.value = textoSalida;
+    entrada.value = "";    
 }
 
 function copiar(){    
     const copiarSalida = salida;
     copiarSalida.select();
     document.execCommand('copy');
+    /* entrada.value = salida.value; */
 }
 
 function confuguracionSeccionEncriptado(){
-    let copiar = document.getElementById('botonCopiar');
+    const copiar = document.querySelector(".btn_copiar");
     copiar.style.visibility = 'visible';
-    let imagen = document.getElementById('imagen2');
-    imagen.style.visibility = 'hidden';
-    imagen.style.width = '0%';
-    let label = document.getElementById('label1');
-    label.style.visibility = 'hidden';
-    label.style.width = '0%';
-    label.style.height = '0%';
+    const label1 = document.querySelector(".label_1");
+    label1.style.display = "none";
+    const label2 = document.querySelector(".label_2");
+    label2.style.display = "none";
+    salida.style.backgroundImage = "none";
 }

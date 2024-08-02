@@ -9,28 +9,28 @@
 
 <body>
     <header>
-        <img class="imagen" src="./assets/Ghost-Recon.png" alt="logo">
+        <img class="logo" src="./assets/Ghost-Recon.png" alt="logo personalizado">
     </header>
 
-    <main class="presentacion">
-        <section class="presentacon__contenido">
-            <textarea id="entradaTexto" class="presentacion__contenido__texto" placeholder="Ingrese el texto aquí"></textarea>
-            <p class="presentacion__botones__subtitulo"><img src="./assets/bi_exclamation-circle-fill.png" alt="muñecoBuscando"> Solo letras minúsculas y sin acento</p>
-            <div class="presentacion__botones">
-                <button onclick="encriptar();" class="boton__1">Encriptar</button>
-                <button onclick="desencriptar();" class="boton__2">Desencriptar</button>
+    <main class="main">
+        <section>
+            <textarea class="textarea_entrada" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="advertencia">【!】 Solo letras minúsculas y sin acento</p>
+            <div class="botones">
+                <button onclick="encriptar();" class="btn_encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="btn_desencriptar">Desencriptar</button>
             </div>
         </section>
-        <section id="seccion__encriptado" class="encriptado">
-            <textarea id="salidaTexto" class="encriptado__texto"></textarea>
-            <img id="imagen2" class="endriptado__imagen" src="./assets/Muñeco.png" alt="">
-            <label id="label1" class="encriptado__label"><strong>Ningún mensaje fue encontrado</strong><br><br>Ingresa el texto que deseas encriptar o desencriptar</label>
-            <button onclick="copiar();" id="botonCopiar" class="encriptado__boton__3">Copiar</button>
+        <section class="contenedor_salida">
+            <textarea class="textarea_salida"></textarea>
+            <label class="label_1">Ningún mensaje fue <br> encontrado</label>
+            <label class="label_2">Ingresa el texto que deseas encriptar <br> o desencriptar</label>
+            <button onclick="copiar();" class="btn_copiar">Copiar</button>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>Desarrollado por Bayron Ramirez</p>
+    <footer>
+        <p class="footer">Desarrollado por Bayron Ramirez</p>
     </footer>
     <script src="app.js"></script>
 </body>
