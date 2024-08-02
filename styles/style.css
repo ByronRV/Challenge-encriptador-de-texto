@@ -103,6 +103,7 @@ button:hover{     /*Cambia de color al pasar el mouse*/
 
 .label_1{
     background: transparent;
+    color: var(--color-primario);
     font-size: 20px;
     font-weight: 700;
     text-align: center;
