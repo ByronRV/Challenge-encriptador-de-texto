@@ -82,7 +82,7 @@ button:hover{     /*Cambia de color al pasar el mouse*/
 
 .contenedor_salida {    
     position: relative;
-    width: 390px;
+    width: auto;
 }
 
 .textarea_salida{
