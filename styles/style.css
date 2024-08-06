@@ -152,12 +152,14 @@ button:hover{     /*Cambia de color al pasar el mouse*/
 @media (max-width: 800px) {     /*Responsive*/
     .main{
         flex-direction: column;
-        padding: 5%;
+        padding: 0;
+        margin: 0;
     }
     .contenedor_salida{
         width: auto;
     }
     .textarea_salida{
         width: auto;
+        margin: 0;
     }
 }
