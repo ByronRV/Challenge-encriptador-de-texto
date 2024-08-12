@@ -36,12 +36,14 @@ header {
 
 .textarea_entrada{
     color: var(--color-primario);
+    max-width: 690px;
     height: 500px;
     padding: 10px;
     border: none;
     outline: none;
     resize: none;
     text-transform: lowercase;
+    field-sizing: content;
 }
 
 .advertencia {
@@ -150,6 +152,9 @@ button:hover{     /*Cambia de color al pasar el mouse*/
 }
 
 @media (max-width: 800px) {     /*Responsive*/
+    .textarea_entrada{
+        max-width: 350px;
+    }
     .main{
         flex-direction: column;
         padding: 0;
@@ -159,7 +164,7 @@ button:hover{     /*Cambia de color al pasar el mouse*/
         width: auto;
     }
     .textarea_salida{
-        width: auto;
+        max-width: 330px;
         margin: 0;
     }
 }
