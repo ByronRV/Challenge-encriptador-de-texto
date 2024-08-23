@@ -31,6 +31,7 @@ header {
 .main{
     display: flex;
     justify-content: center;
+    justify-items: center;
     padding: 10px;
     gap: 50px;
 }
@@ -88,6 +89,7 @@ button:hover{     /*Cambia de color al pasar el mouse*/
 
 .textarea_salida{
     height: 530px;
+    max-width: 300px;
     padding: 20px;
     background: var(--color-blanco);
     background-image: url(../assets/buscando.png);
@@ -157,16 +159,14 @@ button:hover{     /*Cambia de color al pasar el mouse*/
     }
     .main{
         flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
+        text-align: center;
     }
     .btn_encriptar, .btn_desencriptar, .btn_copiar{
         font-size: 20px;
         width: 180px;
     }
-    .textarea_salida{
+    /* .textarea_salida{
         max-width: 330px;
         margin: 0;
-    }
+    } */
 }
