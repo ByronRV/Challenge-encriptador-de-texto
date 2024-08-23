@@ -34,15 +34,14 @@ function copiar(){
     const copiarSalida = salida;
     copiarSalida.select();
     document.execCommand('copy');
-    /* entrada.value = salida.value; */
 }
 
-function confuguracionSeccionEncriptado(){
+function confuguracionSeccionEncriptado(){ 
     const copiar = document.querySelector(".btn_copiar");
-    copiar.style.visibility = 'visible';
     const label1 = document.querySelector(".label_1");
-    label1.style.display = "none";
     const label2 = document.querySelector(".label_2");
+    copiar.style.visibility = 'visible';
+    label1.style.display = "none";
     label2.style.display = "none";
     salida.style.backgroundImage = "none";
 }
